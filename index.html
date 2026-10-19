@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            gap: 30px;
+            font-size: larger;
+        }
+
+        #btn {
+            background-color: rgb(5, 83, 5);
+            color: azure;
+            height: 30px;
+            border-radius: 8px;
+            height: 40px;
+            width: 200px;
+        }
+
+        #length {
+            height: 24px;
+            width: 100px;
+        }
+
+        #password {
+            height: 24px;
+            width: 200px;
+            margin-right: 14px;
+        }
+
+        #copy {
+            height: 29px;
+            width: 100px;
+        }
+
+        label {
+            margin-right: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label>Select length:</label>
+        <select id="length">
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+        </select>
+    </div>
+    <button id="btn">Generate Password</button>
+    <div>
+
+        <input type="text" id="password" readonly>
+        <button id="copy">Copy</button>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
